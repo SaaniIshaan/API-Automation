@@ -1,0 +1,18 @@
+{
+	"prod" :{
+		"uri" : "",
+		"username" : "guptamonika@tekarch.com",
+		"password" : "Admin123"
+	},
+	"qa" : {
+		"uri" : "",
+		"username" : "qa.guptamonika@tekarch.com",
+		"password" : "Admin123"
+	},
+	"beta" : {
+		"uri" : "",
+		"username" : "beta.guptamonika@tekarch.com",
+		"password" : "Admin123"
+	}
+	
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-02T13:53:58 PDT" name="Default suite" finished-at="2023-10-02T13:54:01 PDT" duration-ms="2981">
+    <groups>
+    </groups>
+    <test started-at="2023-10-02T13:53:58 PDT" name="Default test" finished-at="2023-10-02T13:54:01 PDT" duration-ms="2981">
+      <class name="apitests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:apitests.LoginTest@5562c41e]" started-at="2023-10-02T13:53:58 PDT" name="setUp" finished-at="2023-10-02T13:54:00 PDT" duration-ms="2107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setURI()[pri:0, instance:apitests.LoginTest@5562c41e]" started-at="2023-10-02T13:54:00 PDT" name="setURI" finished-at="2023-10-02T13:54:00 PDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setURI -->
+        <test-method signature="loginTC_01()[pri:0, instance:apitests.LoginTest@5562c41e]" started-at="2023-10-02T13:54:00 PDT" name="loginTC_01" finished-at="2023-10-02T13:54:01 PDT" duration-ms="810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTC_01 -->
+        <test-method signature="updateData_TC02()[pri:0, instance:apitests.LoginTest@5562c41e]" started-at="2023-10-02T13:54:01 PDT" name="updateData_TC02" finished-at="2023-10-02T13:54:01 PDT" duration-ms="27" status="FAIL">
+          <exception class="com.fasterxml.jackson.databind.exc.InvalidDefinitionException">
+            <message>
+              <![CDATA[No serializer found for class api.testdata.UpdateUser and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class api.testdata.UpdateUser and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)
+at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)
+at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1308)
+at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:414)
+at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.failForEmpty(UnknownSerializer.java:53)
+at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.serialize(UnknownSerializer.java:30)
+at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:479)
+at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:318)
+at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4719)
+at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:3964)
+at api.utils.CommonUtilities.serializeObject(CommonUtilities.java:40)
+at apitests.LoginTest.updateData_TC02(LoginTest.java:123)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.fasterxml.jackson.databind.exc.InvalidDefinitionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateData_TC02 -->
+      </class> <!-- apitests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
