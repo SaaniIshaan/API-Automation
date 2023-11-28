@@ -1,5 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
   "type": "object",
   "properties": {
     "accountno": {
@@ -8,17 +9,17 @@
     "departmentno": {
       "type": "string"
     },
-    "pincode": {
+    "salary": {
       "type": "string"
     },
-    "salary": {
+    "pincode": {
       "type": "string"
     }
   },
   "required": [
     "accountno",
     "departmentno",
-    "pincode",
-    "salary"
+    "salary",
+    "pincode"
   ]
 }

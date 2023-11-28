@@ -20,8 +20,6 @@ public class RestUtils {
 		return RestAssured.given().headers(headers).when().get(endPoint);
 	}
 	
-
-	
 	public static Response putReq(HashMap<String, String> payload, HashMap<String, String> headers, String endPoint) {
 		return  RestAssured.given().headers(headers).when().body(payload).put(endPoint);
 	}

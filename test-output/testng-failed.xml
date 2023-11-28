@@ -5,9 +5,9 @@
     <classes>
       <class name="apitests.LoginTest">
         <methods>
-          <include name="updateData_TC02"/>
           <include name="setURI"/>
           <include name="setUp"/>
+          <include name="addData_TC02"/>
         </methods>
       </class> <!-- apitests.LoginTest -->
     </classes>

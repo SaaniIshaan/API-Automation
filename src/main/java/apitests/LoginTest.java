@@ -67,7 +67,7 @@ public class LoginTest extends APIBaseTest{
 	}
 	
 	
-	// @Test(enabled = true)
+	 @Test(enabled = true)
 	 
 	 public void getData_TC02() {
 		 
@@ -90,7 +90,7 @@ public class LoginTest extends APIBaseTest{
 	 }
 
 	 
-	// @Test(enabled = true)
+	 @Test(enabled = true)
 	 
 	 public void addData_TC02() throws JsonProcessingException {
 		 
@@ -98,7 +98,7 @@ public class LoginTest extends APIBaseTest{
 		 headers.put("Token", token);
 		 headers.put("Content-Type", "application/json");
 		 
-		 AddUser adduser = new AddUser("TA-1234000", "1","987654","90000");
+		 AddUser adduser = new AddUser("TA-1100005", "2","12110","70000");
 		 
 		 String sPayload = CommonUtilities.serializeObject(adduser);
 		 
@@ -110,8 +110,7 @@ public class LoginTest extends APIBaseTest{
 		 
 		 
 	 }
-	 
-		@Test(enabled = true)
+//	 @Test(enabled = true)
 	 	public void updateData_TC02() throws JsonProcessingException {
 		 
 		 HashMap<String, String> headers = new HashMap<>();
@@ -149,7 +148,9 @@ public class LoginTest extends APIBaseTest{
 		deleteUserData.then().assertThat().body(matchesJsonSchema(new File(FileConstants.DELETE_DATA_SCHEMA)));
 		System.out.println( deleteUserData.prettyPrint());
 		
-	 }	
-		
- }
-	
+	 	}	
+
+
+	}
+
+
